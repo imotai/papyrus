@@ -20,3 +20,5 @@ fn test_block_number_iteration() {
 
     assert_eq!(expected, from_iter);
 }
+
+blalala
