@@ -252,9 +252,7 @@ impl<TStarknetClient: StarknetClientTrait + Send + Sync + 'static>
                         break;
                     }
                     Err(err) => {
-                        match err {
-                            _ => yield (Err(CentralError::ClientError(err))),
-                        }
+                        yield (Err(CentralError::ClientError(err)));
                         break;
                     }
                 };
